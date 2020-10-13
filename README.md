@@ -1,8 +1,8 @@
 # hexo-generator-restful
 
-Generate restful json data for Hexo plugins.
+Generate restful json data for Hexo plugins. Fit for `hexo-theme-zhaoo` & `hexo-weapp-zhaoo`
 
-生成 restful 风格的 json 数据，可以当作 api 接口，开始构建一个 SPA 应用吧。
+生成 restful 风格的 json 数据，可以当作 api 接口，`zhaoo` 主题适配版。
 
 ## Install
 
@@ -39,6 +39,7 @@ restful:
   use_tag_slug: false      # Use slug for filename of tag data
   post: true               # 文章数据
   pages: false             # 额外的 Hexo 页面数据, 如 About
+  galleries: false         # 相册数据 
 ```
 
 ## Document
@@ -172,3 +173,45 @@ GET /api/pages/about.json
 ###### Response
 
 格式类似于于 Get Post By Slug。
+
+### Get All Galleries
+
+获取所有相册分类。
+
+###### Request
+
+```
+GET /api/galleries.json
+```
+
+###### Response
+
+[/api/galleries.json](https://www.izhaoo.com/api/galleries.json)
+
+### Get Gallerie By Name
+
+根据相册名称获取相册详细内容
+
+###### Request
+
+```
+GET /api/galleries/:Name.json
+```
+
+###### Response
+
+[/api/galleries/colorful.json](https://www.izhaoo.com/api/galleries/colorful.json)
+
+### Get All Photos
+
+获取所有照片（不分类）。
+
+###### Request
+
+```
+GET /api/galleries/all.json
+```
+
+###### Response
+
+[/api/galleries/all.json](https://www.izhaoo.com/api/galleries/all.json)
