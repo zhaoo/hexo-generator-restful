@@ -4,6 +4,29 @@ Generate restful json data for Hexo plugins. Fit for `hexo-theme-zhaoo` & `hexo-
 
 生成 restful 风格的 json 数据，可以当作 api 接口，`zhaoo` 主题适配版。
 
+## 特别说明
+
+说明：我在使用`hexo-weapp-zhaoo` 的时候，需要`hexo-theme-zhaoo`调用此插件生成restful api数据。
+
+### 1、增加了文章头选项部
+
+文章头选项部解析，增加cover选项，默认的是 image，只是为了切换主题时兼容，因为的文章不少了，要一个个的改好麻烦的。
+
+### 2、增加了文字转拼音
+
+仅仅是调用API的时候为了不直接使用中文。尽管中文并没有什么影响。
+
+使用时需要在 `.deploy_git` 目录执行以下命令，开启git的英文大小写敏感：
+
+```bash
+git config core.ignorecase false
+```
+### 3、增加了替换函数
+
+在调试 `hexo-weapp-zhaoo` 时，发现react 没有解析 `&emsp;` 符号，我是让为了中文首行缩进添加的。
+ 
+
+
 ## Install
 
 ```bash
