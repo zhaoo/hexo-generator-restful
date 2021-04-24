@@ -1,4 +1,6 @@
-# hexo-generator-restful
+# hexo-generator-restful-zhaoo
+
+> 基于 [hexo-generator-restful](https://github.com/yscoder/hexo-generator-restful)
 
 Generate restful json data for Hexo plugins. Fit for `hexo-theme-zhaoo` & `hexo-weapp-zhaoo`
 
