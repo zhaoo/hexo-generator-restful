@@ -9,7 +9,7 @@ Generate restful json data for Hexo plugins. Fit for `hexo-theme-zhaoo` & `hexo-
 ## Install
 
 ```bash
-npm install hexo-generator-restful --save
+npm install hexo-generator-restful-zhaoo --save
 ```
 
 ## Config
